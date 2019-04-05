@@ -1,0 +1,22 @@
+#image { 
+    max-width: 50%;
+    display: block; 
+
+    margin: auto; 
+}
+
+#img-caption{
+    text-align: center; 
+}
+
+#title{ 
+    background-color:#dddddd; 
+}
+
+#title{ 
+    font-size: 25px; 
+}
+
+#tribute-info{ 
+    font-family: 'Inconsolata', monospace; 
+}

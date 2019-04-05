@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href='f.css'>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id='title'>Survey Form</h1>
+
+    <p id='description'> This is a survey made for the freeCodeCamp project. </p>
+
+    <div id='form-outer'>
+        <form id='survey-form' action='#'>
+            <div class='rowtab'>
+                <label for='name' id='name-label' class='labels'> Name: </label>
+                <input type="text" id='name' placeholder="Donald Trump" required class='right-tab'>
+            </div>
+            <div class='rowtab'>
+                <label for='email' id='email-label' class='labels'> Email: </label>
+                <input type="email" id='email' placeholder="djt@wh.gov" required class='right-tab'>
+            </div>
+            <div class='rowtab'>
+                <label for='number' id='number-label' class='labels'> Age (1~100): </label>
+                <input type="number" id='number' placeholder="72" min=1 max=100 required class='right-tab'>
+            </div>
+
+            <div class='rowtab'>
+                <div class='labels'> Country: </div>
+                <select id='dropdown' class='right-tab'>
+                    <option value='uk'>U.K.</option>
+                    <option value='us'>U.S.</option>
+                    <option value='russia'>Russia</option>
+                </select>
+            </div>
+
+            <div class='rowtab'>
+                <div class='labels'> Sex: </div>
+                <div class='radios right-tab'>
+                    <label for='sex-m'> <input type="radio" name='sex' id='sex-m' value='sex-m'>M</label>
+                    <label for='sex-f'> <input type="radio" name='sex' id='sex-f' value='sex-f'>F</label>
+                    <label for='sex-others'> <input type="radio" name='sex' id='sex-others'
+                            value='sex-others'>Others</label>
+                </div>
+            </div>
+            <div class='rowtab'>
+                <div class='labels'> Colors: </div>
+                <div class='cbxs right-tab'>
+                    <label for='cbx-R'> <input type="checkbox" value='Red' id='cbx-R'>Red</label>
+                    <label for='cbx-G'> <input type="checkbox" value='Green' id='cbx-G'>Green</label>
+                    <label for='cbx-U'> <input type="checkbox" value='Blue' id='cbx-U'>Blue</label>
+                    <label for='cbx-B'> <input type="checkbox" value='Black' id='cbx-B'>Black</label>
+                    <label for='cbx-W'> <input type="checkbox" value='White' id='cbx-W'>White</label>
+                </div>
+            </div>
+
+            <div class='rowtab'>
+                <div class='labels'>Additional comments:</div>
+                <textarea id='comments' class='right-tab'></textarea>
+            </div>
+
+            <div class='rowtab'>
+                <div id='subres'>
+                    <input type='reset' id='reset'>
+                    <input type='submit' id='submit'>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    -->
+</body>
+
+</html>

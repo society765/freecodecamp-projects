@@ -1,0 +1,38 @@
+body{ 
+    font-family: 'Inconsolata', monospace; 
+}
+
+header{ 
+    margin: 5pt; 
+}
+
+#header-img{ 
+    width: 100px; 
+    margin: auto 80% auto 20%; 
+    display: block; 
+}
+
+#nav-bar{ 
+    position: fixed; 
+    top: 0px; 
+    width: 100%; 
+    background-color: #00ff00; 
+
+    display: grid; 
+    grid-template-columns: 33% 33% 33%; 
+    text-align: center; 
+}
+
+.nav-div{ 
+    border: 1px solid black; 
+}
+
+@media (min-width: 800px) {
+    #media-p{ 
+        font-size: 18pt; 
+    }
+}
+
+#flex-p{ 
+    display: flex; 
+}

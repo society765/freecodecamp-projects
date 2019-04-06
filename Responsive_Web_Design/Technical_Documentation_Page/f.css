@@ -34,7 +34,9 @@ code{
 
 @media (max-width: 800px){ 
     #navbar{ 
-        display: none; 
+        position: relative; 
+        width: 100%; 
+        height: auto;
     }
      
     #main-doc{ 

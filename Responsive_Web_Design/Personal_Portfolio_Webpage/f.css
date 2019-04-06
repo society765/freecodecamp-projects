@@ -1,0 +1,66 @@
+body{ 
+    font-family: 'Inconsolata', monospace; 
+    text-align: center; 
+}
+
+#welcome-section{ 
+    height: 55vh; 
+    text-align: center; 
+    padding-top: 45vh; 
+    background-color: #e0ebe8; 
+}
+
+#navbar{ 
+    position: fixed; 
+    top: 0%; 
+    left: 0%; 
+    width: 100%; 
+
+    display: grid; 
+    grid-template-columns: auto repeat(3, 120px); 
+    text-align: center; 
+    background-color: #e0ebe8; 
+}
+
+#projects{ 
+    background-color: white; 
+    height: 30vh; 
+}
+#projects-div, #profile-div { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+}
+.project-tile{ 
+    --radius: 20vw; 
+    width: var(--radius); 
+    height: var(--radius); 
+
+    max-width: 125px; 
+    max-height: 125px; 
+
+    border: 1px solid red; 
+    border-radius: 100%; 
+    margin: auto; 
+
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+#div-profile-link{ 
+    background-color: #c8f7c5;
+}
+.profile-tile{ 
+    border: 1px solid red; 
+}
+
+.nav-div{ 
+    border: 1px solid red; 
+}
+
+@media (max-width: 500px){ 
+    .project-tile{ 
+        border-radius: 0; 
+        width: 25vw; 
+    }
+}

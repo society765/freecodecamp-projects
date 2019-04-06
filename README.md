@@ -1,5 +1,7 @@
 # freecodecamp-projects
 
+Visit the [gh-pages](https://society765.github.io/freecodecamp-projects/). 
+
 To be updated ...
 
 ## Responsive Web Design Projects 

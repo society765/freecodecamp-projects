@@ -1,0 +1,44 @@
+body{ 
+    font-family: 'Inconsolata', monospace; 
+}
+
+.main-section{ 
+    margin: 20px; 
+    font-size: 14pt; 
+}
+
+header{ 
+    font-weight: bolder; 
+    font-size: 16pt; 
+    border: 1pt solid black; 
+    background-color: gainsboro
+}
+
+code{ 
+    font-size: 12pt; 
+    background-color: rgb(241, 239, 239); 
+}
+
+#navbar{ 
+    position: fixed; 
+    left: 0%; 
+    top: 0%; 
+    height: 100%; 
+    width: 20%; 
+}
+
+#main-doc{ 
+    width: 75%; 
+    margin-left: 20%; 
+}
+
+@media (max-width: 800px){ 
+    #navbar{ 
+        display: none; 
+    }
+     
+    #main-doc{ 
+        width: 100%; 
+        margin-left: 0%; 
+    }
+}

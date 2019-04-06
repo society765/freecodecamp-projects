@@ -9,3 +9,4 @@ To be updated ...
 * [Tribute Page](./Responsive_Web_Design/Tribute_Page/index.html)
 * [Survey Form](./Responsive_Web_Design/Survey_Form/index.html)
 * [Product Landing Page](./Responsive_Web_Design/Product_Landing_Page/index.html)
+* [Technical Documentation Page](./Responsive_Web_Design/Technical_Documentation_Page/index.html)

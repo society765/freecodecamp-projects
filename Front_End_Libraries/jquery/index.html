@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            $('button').addClass('animated bounce');
+            $('.card').addClass('animated shake'); 
+            // $('#target3').addClass('animated fadeOut'); 
+            // $('button').removeClass('btn-primary'); 
+
+            // $('#target1').css('color', 'red'); 
+            $('#target2').prop('disabled', true); 
+
+            $('h3').html('<em>jQuery Playground changed</em>')
+            $('#target4').html('<strong>'+ $('#target4').text() +'</strong>');
+            $('#target5').clone().appendTo('#left-well'); 
+
+            $('#target2').appendTo('#right-well'); 
+            $('#target6').parent().css('background-color', '#ffff00'); 
+
+            $('#left-well').children().css('color', 'orange'); 
+
+            $('.target:nth-child(2)').addClass('animated flash'); 
+            $('.target:even').addClass('animated tada')
+
+            // $('div.container-fluid').addClass('animated hinge'); 
+        });
+    </script>
+    <!-- Only change code above this line. -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h3 class="text-primary text-center">jQuery Playground</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>#left-well</h4>
+                <div class="card">
+                    <div class="card-body" id="left-well">
+                        <button class="btn btn-primary target" id="target1">#target1</button>
+                        <button class="btn btn-primary target" id="target2">#target2</button>
+                        <button class="btn btn-primary target" id="target3">#target3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h4>#right-well</h4>
+                <div class="card">
+                    <div class="card-body" id="right-well">
+                        <button class="btn btn-primary target" id="target4">#target4</button>
+                        <button class="btn btn-primary target" id="target5" disabled>#target5</button>
+                        <button class="btn btn-primary target" id="target6">#target6</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

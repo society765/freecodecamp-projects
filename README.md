@@ -1,4 +1,4 @@
-# freeCodeCamp-projects
+# freecodecamp-projects
 
 This repo contains my study on [freeCodeCamp.org](https://www.freecodecamp.org). 
 

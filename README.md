@@ -11,3 +11,8 @@ To be updated ...
 * [Product Landing Page](./Responsive_Web_Design/Product_Landing_Page/index.html)
 * [Technical Documentation Page](./Responsive_Web_Design/Technical_Documentation_Page/index.html)
 * [Personal Portfolio Webpage](./Responsive_Web_Design/Personal_Portfolio_Webpage/index.html)
+
+## JavaScript Algorithms and Data Structures
+
+* [JS_projects.html](./JavaScript_Algorithms_and_Data_Structures/js_projects.html)  
+See the `*.js` included in the above html page. 

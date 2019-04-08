@@ -6,6 +6,8 @@ Visit [gh-pages](https://society765.github.io/freecodecamp-projects/) for render
 
 ## Emmet.io cheat sheet rendered for printer 
 
+(This is not a FCC project.)
+
 Visit [emmet](https://society765.github.io/freecodecamp-projects/emmet.io_cheat_sheet_rendered/emmet.html). 
 
 ## Responsive Web Design 

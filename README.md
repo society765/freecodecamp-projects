@@ -9,6 +9,7 @@ Visit [gh-pages](https://society765.github.io/freecodecamp-projects/) for render
 (This is not a FCC project.)
 
 Visit [emmet](https://society765.github.io/freecodecamp-projects/emmet.io_cheat_sheet_rendered/emmet.html). 
+Search  `/* my changes */` in source files to see my customizations. 
 
 ## Responsive Web Design 
 

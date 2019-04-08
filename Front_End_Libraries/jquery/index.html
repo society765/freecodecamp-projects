@@ -7,34 +7,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+        crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title>Document</title>
     <script>
         $(document).ready(function () {
-            $('button').addClass('animated bounce');
-            $('.card').addClass('animated shake'); 
+            // $('button').addClass('animated bounce');
+            $('.card').addClass('animated shake');
             // $('#target3').addClass('animated fadeOut'); 
             // $('button').removeClass('btn-primary'); 
 
             // $('#target1').css('color', 'red'); 
-            $('#target2').prop('disabled', true); 
+            $('#target2').prop('disabled', true);
 
             $('h3').html('<em>jQuery Playground changed</em>')
-            $('#target4').html('<strong>'+ $('#target4').text() +'</strong>');
-            $('#target5').clone().appendTo('#left-well'); 
+            $('#target4').html('<strong>' + $('#target4').text() + '</strong>');
+            $('#target5').clone().appendTo('#left-well');
 
-            $('#target2').appendTo('#right-well'); 
-            $('#target6').parent().css('background-color', '#ffff00'); 
+            $('#target2').appendTo('#right-well');
+            $('#target6').parent().css('background-color', '#ffff00');
 
-            $('#left-well').children().css('color', 'orange'); 
+            $('#left-well').children().css('color', 'orange');
 
-            $('.target:nth-child(2)').addClass('animated flash'); 
+            $('.target:nth-child(2)').addClass('animated flash');
             $('.target:even').addClass('animated tada')
 
             // $('div.container-fluid').addClass('animated hinge'); 
+
+            $('#target6').click(function () {
+                alert('you clicked #target6');
+            });
+
+            $('#sub').click(function () {
+                var a = $('#id-ipv').val();
+                var ar = a.split('').reverse().join('');
+                $('#res').html('Reverse of <b id="sub-1"></b> is <b id="sub-2"></b>');
+                $('#sub-1').text(a).removeAttr('id');
+                $('#sub-2').text(ar).removeAttr('id');
+            });
+
+            $('#try').click(function () {
+                $('#id-ipv').val("<a href='https://github.com'>haha</a>");
+            });
+
+            $('#ran').click(function () {
+                $('#id-ipv').val(rnd(36));
+            });
+
+            $('#id-ipv').keypress(function (e) {
+                if (e.keyCode == 13) $('#sub').click();
+            });
         });
+
+        function rnd(len) {
+            let a = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-=_+[]{},./<>?';
+            let res = '';
+            for (var i = 0; i < len; i++) {
+                res += a[Math.floor(Math.random() * a.length)];
+            }
+            return res;
+        }
     </script>
     <!-- Only change code above this line. -->
 </head>
@@ -63,6 +97,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style='margin-top: 10pt;'>
+        <div class="col-9 row">
+            <label for="id-ipv"> Enter text: </label>
+            <div class="col">
+                <input type="text" name='ipv' id="id-ipv" class='form-control'>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-primary" id='sub'>Reverse!</button>
+                <button class="btn btn-primary" id='try'>Try!</button>
+                <button class="btn btn-primary" id='ran'>Random!</button>
+            </div>
+        </div>
+        <div class="row col-9">
+            Result:
+            <div class="col text-left" id='res'></div>
         </div>
     </div>
 

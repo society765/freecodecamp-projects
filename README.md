@@ -4,6 +4,10 @@ This repo contains my study on [freeCodeCamp.org](https://www.freecodecamp.org).
 
 Visit [gh-pages](https://society765.github.io/freecodecamp-projects/) for rendered pages. 
 
+## Emmet.io cheat sheet rendered for printer 
+
+Visit [emmet](./emmet.io_cheat_sheet_rendered/emmet.html). 
+
 ## Responsive Web Design 
 
 * [Tribute Page](./Responsive_Web_Design/Tribute_Page/index.html)

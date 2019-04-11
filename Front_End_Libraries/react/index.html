@@ -10,19 +10,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.development.js"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"
         crossorigin="anonymous"></script>
     <script src="f.jsx" type="text/babel"></script>
+    <script src="f1.jsx" type="text/babel"></script>
+    <style>
+        .div-main {
+            margin: 5pt;
+            padding: 5pt; 
+        }
+    </style>
     <title>Document</title>
 </head>
 
 <body>
-    <div id="challenge-node"></div>
-    <div id="stateless-function"></div>
-    <div id="component"></div>
+    <div id="challenge-node" class='card div-main'></div>
+    <div id="stateless-function" class='card div-main'></div>
+    <div id="component" class='card div-main'></div>
 
-    <div id="pass-variables"></div>
+    <div id="pass-variables" class='card div-main'></div>
+    <div id='component-with-state' class='card div-main'></div>
+    <div id='io' class='card div-main'></div>
+    <div id='cur-time' class='card div-main'></div>
+    <div id="key-code-pressed" class="card div-main"></div>
+
+    <div style='height: 20vh; ' class='card div-main'></div>
 </body>
 
 </html>

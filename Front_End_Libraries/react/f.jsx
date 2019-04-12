@@ -38,10 +38,6 @@ const rawElementTwo = (
 
 
 class MyComponent extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
@@ -55,7 +51,7 @@ class MyComponent extends React.Component {
 }
 
 const FunctionWithVariables = (props) => {
-    {/* inline style for JSX */ }
+    // inline style for JSX 
     return (
         <div style={{ 'color': 'red' }}>
             Current time is: {props.date} <br />

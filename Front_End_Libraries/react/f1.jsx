@@ -157,3 +157,5 @@ ReactDOM.render(<MyComponentWithState />, document.getElementById('component-wit
 ReactDOM.render(<TextIO />, document.getElementById('io'));
 ReactDOM.render(<CurTime />, document.getElementById('cur-time'));
 ReactDOM.render(<KeyCodePressed />, document.getElementById('key-code-pressed')); 
+
+console.log(ReactDOMServer.renderToString(<KeyCodePressed />)); 

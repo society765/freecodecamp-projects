@@ -23,5 +23,8 @@ See the `*.js` included in the above html page.
 
 ## Front End Libraries
 
+### Practices 
+
 * [jQuery](./Front_End_Libraries/jquery/index.html)
-* [React](./Front_End_Libraries/react/index.html), still developing...
+* [React](./Front_End_Libraries/react/index.html)
+* [React-Redux](./Front_End_Libraries/react-redux/index.html)

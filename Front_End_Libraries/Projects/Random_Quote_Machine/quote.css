@@ -1,0 +1,25 @@
+#div-main {
+    background: #eee;
+    width: 100vw;
+    height: 100vh;
+}
+
+#quote-box {
+    width: 70vw;
+    height: 55vh;
+    border: 1px solid #aaa; 
+}
+
+#author {
+    height: 15%;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+#text {
+    height: 75%;
+}
+
+#buttons {
+    height: 10%;
+}

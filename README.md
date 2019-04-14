@@ -30,4 +30,4 @@ See the `*.js` included in the above html page.
 * [React-Redux](./Front_End_Libraries/react-redux/index.html)
 
 ### Projects 
-* [Random Quote Machine](./Front_End_Libraries/Projects/Random_Quote_Machine/index.html) (preliminary, not finish yet!)
+* [Random Quote Machine](./Front_End_Libraries/Projects/Random_Quote_Machine/index.html)

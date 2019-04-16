@@ -5,10 +5,30 @@ class Calc extends React.Component {
         super(props)
 
         this.appendDisplay = this.appendDisplay.bind(this);
+        this.keypressHandle = this.keypressHandle.bind(this); 
     }
 
     appendDisplay(event) {
         this.props.appendAction(event.target.name);
+    }
+
+    keypressHandle(event){
+        // console.log(event.key); 
+        if (event.key == '=' || event.key == 'Enter'){ 
+            this.props.calcAction(); 
+        } else if (event.key == 'c' || event.key == 'C'){ 
+            this.props.clearAction(); 
+        } else if ('1234567890+-*/.'.includes(event.key)){ 
+            this.props.appendAction(event.key); 
+        }
+    }
+
+    componentDidMount(){
+        window.addEventListener('keydown', this.keypressHandle); 
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener('keydown', this.keypressHandle); 
     }
 
     render() {

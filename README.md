@@ -29,6 +29,7 @@ See the `*.js` included in the above html page.
 * [React](./Front_End_Libraries/react/index.html)
 * [React-Redux](./Front_End_Libraries/react-redux/index.html)
 
-### Projects 
-* [Random Quote Machine](./Front_End_Libraries/Projects/Random_Quote_Machine/index.html)
-* [Markdown Previewer](./Front_End_Libraries/Projects/Markdown_Previewer/index.html)
+### Projects (React+Redux+jQuery.ajax)
+* [Random Quote Machine](./Front_End_Libraries/Projects/Random_Quote_Machine/index.html) (fetch a random page from Wikipedia, parse and print the first paragraph)
+* [Markdown Previewer](./Front_End_Libraries/Projects/Markdown_Previewer/index.html) (used third-party open-source Markdown parser)
+* [JS Calculator](./Front_End_Libraries/Projects/JS_Calculator/index.html) (all code written by myself)

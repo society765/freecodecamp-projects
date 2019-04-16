@@ -1,0 +1,47 @@
+:root{
+    --row-button-height: 84px; 
+    --row-button-weight: 90px; 
+}
+
+#div-main{
+    width: 100vw; 
+    height: 100vh;
+    background: #cee; 
+}
+
+.calc-row-button{
+    height: var(--row-button-height); 
+}
+
+#ff-row-right{ 
+    height: calc(var(--row-button-height)*2); 
+}
+
+#display-formula{
+    height: calc(var(--row-button-height)/2); 
+    border: 1px solid black; 
+    background: #eec; 
+    font-size: 12pt; 
+}
+
+#display{
+    height: calc(var(--row-button-height) * 2); 
+    border: 1px solid black; 
+    background: #eec; 
+    font-size: 24pt; 
+    word-wrap: break-word;
+}
+
+#calc-container{ 
+    width: calc(var(--row-button-weight)*4); 
+    border: 0; 
+    background: white; 
+    border: 1px solid black; 
+    font-family: 'Changa', sans-serif;
+}
+
+.calc-button{ 
+    padding: 0; 
+    border: 1px solid black; 
+    font-size: 18pt; 
+}

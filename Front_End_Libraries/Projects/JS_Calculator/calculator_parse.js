@@ -1,6 +1,7 @@
 const WRONG_SYNTAX = 'wrong syntax';
 const DIVIDED_BY_0 = 'divided by 0';
 const UNDEFINED = 'undefined';
+const INFINITY = 'Infinity'; 
 
 /**@param {JSON} display */
 const myParse = function (display, eventStr) {
@@ -9,7 +10,7 @@ const myParse = function (display, eventStr) {
     var newCalc = display.newCalc;
 
     if (newCalc) {
-        if (curNumber == WRONG_SYNTAX || curNumber == DIVIDED_BY_0) {
+        if (curNumber == WRONG_SYNTAX || curNumber == DIVIDED_BY_0 || curNumber == INFINITY) {
             curNumber = '0';
             fullDisplay = '0';
         }
@@ -60,8 +61,12 @@ const calc = function (display) {
     }
 
     var fullDisplay = display.fullDisplay;
-    var sum = calcParsed(fullDisplay);
-    if (sum == UNDEFINED) return { fullDisplay: display.fullDisplay, curNumber: DIVIDED_BY_0, newCalc: true };
+    // var sum = calcParsed(fullDisplay);
+    // if (sum == UNDEFINED) return { fullDisplay: display.fullDisplay, curNumber: DIVIDED_BY_0, newCalc: true };
+
+    var sum = eval(fullDisplay); 
+    if (sum == INFINITY || sum == '-'+INFINITY) 
+        return {fullDisplay: display.fullDisplay, curNumber: INFINITY, newCalc: true}; 
 
     display.fullDisplay += '=' + sum.toString();
     display.curNumber = sum.toString();

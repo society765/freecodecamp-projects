@@ -32,4 +32,5 @@ See the `*.js` included in the above html page.
 ### Projects (React+Redux+jQuery.ajax)
 * [Random Quote Machine](./Front_End_Libraries/Projects/Random_Quote_Machine/index.html) (fetch a random page from Wikipedia, parse and print the first paragraph)
 * [Markdown Previewer](./Front_End_Libraries/Projects/Markdown_Previewer/index.html) (used third-party open-source Markdown parser)
-* [JS Calculator](./Front_End_Libraries/Projects/JS_Calculator/index.html) (all code written by myself)
+* [JS Calculator](./Front_End_Libraries/Projects/JS_Calculator/index.html) (check if it works!)
+* [Drum Machine](./Front_End_Libraries/Projects/Drum_Machine/index.html) 

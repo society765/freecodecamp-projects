@@ -2,7 +2,7 @@
 
 This repo contains my study on [freeCodeCamp.org](https://www.freecodecamp.org). 
 
-Visit [gh-pages](https://society765.github.io/freecodecamp-projects/) for rendered pages. 
+Visit [gh-pages](https://xwang233.github.io/freecodecamp-projects/) for rendered pages. 
 
 ## Responsive Web Design 
 
